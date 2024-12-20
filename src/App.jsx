@@ -9,6 +9,7 @@ import Footer from './components/Footer'
 import RecipeDetails from './pages/RecipeDetails'
 import AllCategories from './components/AllCategories'
 import RecipesByCategory from './components/RecipesByCategory'
+import FavoritesPage from './pages/FavoritesPage'
 
 
 function Layout(){
@@ -32,6 +33,7 @@ function App() {
         <Route path='/' element={<Layout/> } >
           <Route index element={<Home/>} />
           <Route path='/' element={<AllCategories/>}/>
+          <Route path='/favorites' element = {<FavoritesPage/>}/>
           <Route path = '/recipes/:category' element={<RecipesByCategory/>}/>
           <Route path='recipe/:id' element = {<RecipeDetails/>} />
         </Route>
