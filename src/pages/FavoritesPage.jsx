@@ -25,7 +25,7 @@ const FavoritesPage = () => {
           {favourites.map((recipe) => (
             <RecipeCards
               recipe={recipe}
-              key={recipe.idMeal}
+              key={recipe.strMeal}
               toggleFavorite={toggleFavorite}
             />
           ))}
