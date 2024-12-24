@@ -13,8 +13,8 @@ const FavoritesPage = () => {
 
 
   const toggleFavorite = (recipe) => {
-    const updatedFavorites = favourites.filter((fav) => fav !== recipe.strMeal);
-    localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
+    const updatedFavourites = favourites.filter((fav) => fav !== recipe.strMeal);
+    localStorage.setItem('favourites', JSON.stringify(updatedFavourites));
   };
 
   return (
